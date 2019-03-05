@@ -6,7 +6,26 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content padding class="action-sheets-basic-page">
+
+  <ion-button block (click)="openMenu()">
+    Show action sheet
+  </ion-button>
+
+  <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>New component</ion-card-subtitle>
+        <ion-card-title>My card</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        This is a new component. It's called a card component. It's useful to present text !
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+        <ion-label>Date picker</ion-label>
+        <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+      </ion-item>
+ 
 </ion-content>
